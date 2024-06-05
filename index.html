@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" id="auth-container">
+        <h1>To-Do List</h1>
+        <div id="register-form">
+            <h2>Register</h2>
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <input type="tel" id="register-phone" placeholder="Phone Number">
+            <button id="register-btn">Register</button>
+            <p class="auth-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+        <div id="login-form" style="display: none;">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p class="auth-link">Don't have an account? <a href="#" id="show-register">Register</a></p>
+        </div>
+    </div>
+    <div class="container" id="todo-container" style="display: none;">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Enter your task">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+        <button id="logout-btn">Logout</button>
+    </div>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* Загальні стилі */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    border-top: 5px solid #7d3c98; /* Декоративний верхній бордюр */
+}
+
+h1 {
+    color: #5b2c6f;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #dcdcdc; /* Декоративна нижня лінія */
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #5b2c6f;
+    margin-bottom: 16px; /* Відстань між заголовком та полями */
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: none; /* Прибрати нижню лінію */
+}
+
+/* Стилі для форми реєстрації та логіну */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Відстань між полями 16px */
+}
+
+input {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Враховувати відступи всередині поля */
+}
+
+button {
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 16px;
+}
+
+button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#register-btn, #login-btn, #logout-btn {
+    background-color: #8e44ad;
+    color: white;
+}
+
+#register-btn:hover, #login-btn:hover, #logout-btn:hover {
+    background-color: #732d91;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 24px; /* Відстань між кнопкою та посиланням 24px */
+}
+
+.auth-link a {
+    color: #8e44ad; /* Фіолетовий колір для посилання Login */
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для полів введення та кнопок у To-Do списку */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+}
+
+button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#add-task-btn {
+    background-color: #8e44ad;
+    color: white;
+    width: auto;
+    margin: 0;
+}
+
+#add-task-btn:hover {
+    background-color: #732d91;
+}
+
+.delete-btn {
+    background-color: #732d91; /* Темно-помаранчевий */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #b49dd0; /* Світло-помаранчевий */
+}
+
+.complete-btn {
+    background-color: #9b59b6; /* Темно-фіолетовий */
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #b49dd0; /* Світло-фіолетовий */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4eef6; /* Світло-фіолетовий фон для елементів списку */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-left: 5px solid #8e44ad; /* Декоративний лівий бордюр */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
+li > span {
+    flex-grow: 1;
+    padding-right: 16px; /* Відстань між текстом та кнопками */
+}
+
+li > button {
+    flex-grow: 0;
+    margin-left: 16px; /* Відстань між кнопками */
+}
